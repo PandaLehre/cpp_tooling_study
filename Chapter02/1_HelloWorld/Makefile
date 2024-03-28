@@ -10,6 +10,7 @@
 # 	These files need to exist before the commands for the target are run.
 build:
 	g++ main.cc -c
+# creates main.o file
 	g++ main.o -o main
 
 execute:
@@ -19,3 +20,6 @@ execute:
 clean:
 	rm -f *.o
 	rm -f main
+
+# Namensgebung nicht definiert (build / execute / ... sind keine Keywords)
+# es ist einfach auf eine sinnvolle Namensgebung zu achten
